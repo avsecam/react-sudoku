@@ -1,0 +1,55 @@
+.actions {
+	display: flex;
+	flex-direction: column;
+	height: 50%;
+	justify-content: space-around;
+
+}
+
+.actions>button {
+	background-color: darkslategray;
+	border: 2px solid cyan;
+	color: cyan;
+	padding-block: 1rem;
+	height: 30%;
+	width: 5rem;
+	border-radius: 0.5rem;
+	transition: all 0.2s;
+}
+
+.actions>button:hover {
+	background-color: black;
+}
+
+.container {
+	margin-inline: 1rem;
+	display: grid;
+	grid-template-columns: repeat(9, 1fr);
+	height: fit-content;
+	width: fit-content;
+}
+
+.cell {
+	height: 10vmin;
+	width: 10vmin;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px black solid;
+}
+
+.cell>input {
+	color: darkslategray;
+	text-align: center;
+	font-size: 30px;
+	height: 100%;
+	width: 100%;
+	border: none;
+	padding: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	margin: 0;
+	-webkit-appearance: none;
+}
